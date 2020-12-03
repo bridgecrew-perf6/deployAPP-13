@@ -1,0 +1,9 @@
+--- 
+applications: 
+  - 
+    docker: 
+      image: <YOUR DOCKERHUB USERNAME>/python-ml-service
+    command: "python app.py"
+    memory: 500M
+    name: MLModelAPI2
+    random-route: true
