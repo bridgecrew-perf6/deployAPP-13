@@ -31,6 +31,12 @@ def predict():
     response = {'prediction': prediction}
     return flask.jsonify(response)
 
+@app.route('/hola', methods=['GET'])
+def hola():
+    #take the features from the jason
+    
+    return flask.jsonify("hola get")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
     
